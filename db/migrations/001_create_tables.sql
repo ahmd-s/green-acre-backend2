@@ -112,7 +112,7 @@ CREATE INDEX IF NOT EXISTS idx_pricing_rules_date
 
 -- Admin rate manager: fetch by month
 CREATE INDEX IF NOT EXISTS idx_pricing_rules_month
-  ON pricing_rules (DATE_TRUNC('month', target_date));
+  ON pricing_rules (DATE_TRUNC('month', target_date::timestamp));
 
 
 -- ── 3. default_rates ─────────────────────────────────────────
