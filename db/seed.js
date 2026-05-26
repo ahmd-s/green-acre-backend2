@@ -20,7 +20,7 @@
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
-const { query, connectDB, closeDB } = require('./config/db');
+const { query, connectDB, closeDB } = require('../config/db');
 
 const SEEDS_DIR = path.join(__dirname, 'seeds');
 
