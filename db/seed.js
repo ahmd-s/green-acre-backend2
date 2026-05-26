@@ -55,7 +55,7 @@ async function runSeeds() {
   // Run the admin user JS seed separately (needs its own DB connection).
   console.log('[Seed] Running admin user seed...');
   try {
-    require('./seeds/004_admin_user.js');
+    
     // 004_admin_user.js manages its own connection and process exit.
   } catch (err) {
     console.error('[Seed] Admin user seed failed:', err.message);
